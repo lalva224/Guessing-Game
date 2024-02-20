@@ -3,10 +3,10 @@
     <meta charset="utf-8">
     <title>TITLE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Your link to your CSS file -->
-    <link rel="stylesheet" href="">
-    <!-- Your Javascript file goes here -->
-    <script src="" async defer></script>
+    <link rel = "stylesheet" href = "styles.css"  type = "text/css">
+  <!-- async leads to faster loading times as html parsing and script loading at same time. Defer keeps order of scripts -->
+    <script src = "app.js" ></script>
+    <!-- <script src="" async defer></script> -->
   </head>
   <body>
     <!-- your HTML should go here -->
@@ -14,6 +14,19 @@
       <h1>Let's Play the Guessing Number Game!</h1>
     </nav>
 
+    <h4>Guess a number! 1-100</h4>
+    <input id ="guess"placeholder="guess">
+    <input onclick ="submitForm(event)" type = "submit">
+    
+    <!--Here its simpler to just create invisible p tags-->
+    <p id = "too-low">Too Low!</p>
+    <p id = "too-high">Too high</p>
+    <h4 id = "correct">Guessed Correctly!</h4>
+
+    <!--Create text content inside the div tag for all the guesses-->
+    <div id = "guesses">
+      
+    </div>
 
   </body>
 </html>

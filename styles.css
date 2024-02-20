@@ -9,3 +9,14 @@ h1 {
   font-weight: 400
 }
 
+#too-low{
+  visibility: hidden;
+}
+
+#too-high{
+  visibility: hidden;
+}
+#correct{
+  visibility: hidden;
+}
+
